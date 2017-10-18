@@ -40,7 +40,11 @@ public class Main {
         }
         System.out.println("\nStream, filter, forEach:");
         // write stream
-        System.out.println();
+        List<Entry> tuesdayEntry = entries.stream()
+                .filter(e -> e.getDay() ==Day.TUESDAY)
+                .collect(Collectors.toList());
+        // Why did Java/intelliJ know the to use the collect operation
+        System.out.println(tuesdayEntry);
     }
 
     public static void countTueWedThur(List<Entry> entries) {

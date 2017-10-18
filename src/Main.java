@@ -32,7 +32,12 @@ public class Main {
 
         //Print out tuesday entries
         System.out.println("For Loop:");
-        // write for loop
+        // write for loop\\\\
+        for (Entry entry : entries){
+            if (entry.getDay().equals(Day.TUESDAY)){
+                System.out.println(entry);
+            }
+        }
         System.out.println("\nStream, filter, forEach:");
         // write stream
         System.out.println();

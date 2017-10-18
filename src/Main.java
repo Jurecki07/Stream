@@ -52,6 +52,11 @@ public class Main {
         System.out.println("For Loop:");
         int count = 0;
         // write for loop
+        for (Entry countDays : entries){
+            if(countDays.getDay() == Day.TUESDAY || countDays.getDay()== Day.WEDNESDAY || countDays.getDay() == Day.THURSDAY){
+                count++;
+            }
+        }
         System.out.println("Number of entries on Tuesday, Wednesday or Thursday: " + count);
         System.out.println("Stream, filter, count: ");
         long count1 = 0;

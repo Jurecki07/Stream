@@ -61,7 +61,7 @@ public class Main {
         System.out.println("Stream, filter, count: ");
         long count1 = entries.stream()
                 .filter( entry -> entry.getDay() == Day.TUESDAY || entry.getDay()== Day.WEDNESDAY || entry.getDay() == Day.THURSDAY )
-                .count()
+                .count();
 
 
         // write stream
